@@ -1,0 +1,308 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" data-ng-app="YnetApp">
+<head>
+    <base href="http://m.ynet.co.il/"/>
+    <title data-ng-bind="PageTitle">ynet</title>
+    <meta charset="utf-8" />
+    <meta name="Description" content="" />
+    <meta name="Keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <base href="/">
+    <link rel="apple-touch-icon" href="images/icon_ynet_64.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/icon_ynet_64.png" />
+    
+    <link rel="canonical" href="http://www.ynet.co.il/home/0,7340,L-8,00.html" />
+    
+
+    <!-- Twitter summary card metadata -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="ynet" />
+    <meta property="twitter:description" content="דף הבית" />
+    <meta property="twitter:image" content="http://m.ynet.co.il/images/big_ynet_logo.png" />
+    <!-- Facebook, Pinterest, Google Plus and others make use of open graph metadata -->
+    <meta property="og:title" content="ynet" />
+    <meta property="og:description" content="דף הבית" />
+    <meta property="og:image" content="http://m.ynet.co.il/images/big_ynet_logo.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.ynet.co.il/home/0,7340,L-8,00.html" />
+    <meta property="outbrain:section" content="8.Central-1.Home" />
+    <meta name="apple-itunes-app-internal" content="app-id=424830861"/>
+    <meta name="google-play-app" content="app-id=com.goldtouch.ynet"/>
+    <link rel="stylesheet" href="css/jquery.smartbanner.css?v=0674" type="text/css" media="screen"/>
+    <!-- Ynet APP Css -->
+    <link href="css/MasterPage.css?v=0674" rel="stylesheet" />
+    <link href="css/News.css?v=0674" rel="stylesheet" />
+    <link href="css/Responsive.css?v=0674" rel="stylesheet" />
+    <link data-ng-href="{{PageCss}}" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Arimo&subset=latin,hebrew' rel='stylesheet' type='text/css' />
+    <!-- ADS -->
+<!--    <script type='text/javascript'>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        (function () {
+            var gads = document.createElement('script');
+            gads.async = true;
+            gads.type = 'text/javascript';
+            var useSSL = 'https:' == document.location.protocol;
+            gads.src = (useSSL ? 'https:' : 'http:') +
+            '//www.googletagservices.com/tag/js/gpt.js';
+            var node = document.getElementsByTagName('script')[0];
+            node.parentNode.insertBefore(gads, node);
+        })();
+    </script>-->
+    <!-- Libraries / Jquery, Modernizr, Greensock  -->
+    <script src="js/Libraries/jquery.min.js"></script>
+    <script src="js/Libraries/modernizr.js"></script>
+    <script src="js/Libraries/TweenMax.min.js"></script>
+    <!-- Ynet Angular Modules -->
+    <script src="js/App/Modules/angular.min.js"></script>
+    <script src="js/App/Modules/angular-route.min.js"></script>
+    <script src="js/App/Modules/angular-touch.min.js"></script>
+    <script src="js/App/Modules/angular-animate.min.js"></script>
+    <script src="js/App/Modules/ng-infinite-scroll.min.js"></script>
+    <!-- External Functions / Out of Angular  -->
+<!--    <script src="js/App/External/AdsManager.js?v=0674"></script>-->
+    <!-- Ynet Angular App -->
+    <script src="js/App/App.js?v=0674"></script>
+    <script src="js/App/controllers.js?v=0674"></script>
+    <script src="js/App/directives.js?v=0674"></script>
+    <script src="js/App/filters.js?v=0674"></script>
+    <script src="js/App/Services.js?v=0674"></script>
+    <script src="js/App/animations.js?v=0674"></script>
+    <!-- Plugins / ClampJs, IScroll -->
+    <script type="application/javascript" src="js/Plugins/clamp.js"></script>
+    <script type="application/javascript" src="js/Plugins/carousel/iscroll/iscroll.js"></script>
+    <script type="text/javascript" src="js/Plugins/jquery.simplemodal-1.4.4.js"></script>
+    <!-- Dynamic Yeald -->
+    
+        <script type='text/javascript'>
+        DY = { scsec: 8765235, API: function () { (DY.API.actions = DY.API.actions || []).push(arguments) } };
+        </script>
+    <script type='text/javascript' src='//dy2.ynet.co.il/scripts/8765235/api_static.js'></script>
+    <script type='text/javascript' src='//dy2.ynet.co.il/scripts/8765235/api_dynamic.js'></script>
+    
+</head>
+<body data-ng-init="CheckOnScroll()">
+    <script>
+        var dcPath = '8.Central-1.Home';
+    </script>
+    <!-- Google Tag Manager -->
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-KJC9TN"
+        height="0" width="0" style="display:none;visibility:hidden">
+        </iframe>
+    </noscript>
+<!--    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KJC9TN');
+        $(document).ready(function () {
+            //Initial DOM load
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            //This handles content changing on the page.
+            $("#main").bind("DOMSubtreeModified", function () {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            });
+        });
+    </script>-->
+    <!-- End Google Tag Manager -->
+    <!-- Start Body -->
+    <div id="BodyContainer">
+        <!-- Start Talkback Header -->
+        <div id="HeaderTalkbacks" data-ng-show="idCatGlobal == 'TalkbacksPage'" ng-cloak>
+            <ul>
+                <li id="LeftBtn">
+                    <p class="btn" data-ng-show="AddTalkback != true">
+                        <a ng-href="AddTalkback?TalkbackId={{Article_ID}}&amp;CategoryGuid={{Category_Guid}}&amp;TalkbackType={{Talkback_Type}}">הוסף</a>
+                    </p>
+                    <p id="BtnShowAll" class="btn" data-ng-show="AddTalkback != true">
+                        <a ng-click="ShowHideAllElm()">הרחב</a>
+                    </p>
+                    <p class="btn" data-ng-show="AddTalkback == true"><a ng-click="HistoryBack()">בטל</a></p>
+                </li>
+                <li id="RightBtn">
+                    <a data-ng-href="8" data-ng-click="ClearTimeHistoryBack()">
+                        <img src="images/Icons_header/logolavan.png" alt="LogoYnet" class="logoYnet" /></a>
+                </li>
+            </ul>
+            <p class="TalkNameHeader" data-ng-show="AddTalkback != true">תגובה לכתבה</p>
+            <p class="TalkNameHeader" data-ng-show="AddTalkback != true">תגובות</p>
+        </div>
+        <!-- End Talkback Header -->
+
+        <!-- Start Default Header -->
+        <div id="Header" data-ng-show="idCatGlobal != 'TalkbacksPage'">
+            <a data-ng-href="8" id="logoYnet"
+                 data-ng-click="CloseMoreNews();Checkscroll();TagManager_GA_Event('Header','Logo Clicked','url');">
+                <img src="images/Icons_header/logolavan.png" alt="LogoYnet" /></a>
+            <ul id="LinksLeft">
+                <li id="morelink"><a data-ng-click="Morepage()">
+                    <img src="images/Icons_header/arutz-button-big.png" class="icons" alt="arutz" />
+                </a></li>
+                <li>
+                    <img src="images/Icons_header/mafrid.png" alt="mafrid" class="kav" />
+                </li>
+                <li id="WeatherBox" data-ng-show="idCatGlobal == 8 || idCatGlobal == 'Articles'"
+                     data-ng-init="WeatherLocation()" ng-cloak>
+                    <a data-ng-href="http://weather.ynet.co.il/?locationid={{CityCode}}"
+                         data-ng-click="TagManager_GA_Event('Header','Weather Clicked','url')">
+                        <p id="Temp">{{CityTempWeather}}&#176;</p>
+                        <img data-ng-src="images/WeatherIcons/{{IconWeather}}.png" data-ng-if="IconWeather != null"
+                             class="icons" alt="sun" />
+                    </a>
+                </li>
+            </ul>
+            <p id="DateNow" data-ng-bind="GetDateToday()" data-ng-if="idCatGlobal == 8 || idCatGlobal == 'Articles'"></p>
+            <p id="CatNameHeader" data-ng-if="idCatGlobal != 8 && idCatGlobal != 'Articles'"
+                data-ng-bind="PageTitle.replace('ynet - ','') | limitInfo: 20">
+            </p>
+        </div>
+        <!-- End Default Header -->
+
+        <!-- Start News Flash / Show only In Home Page -->
+        <div id="MoreNewsBtn" data-ng-click="MoreNewsPopUp()" data-ng-show="idCatGlobal==8 && hasNews==true">+</div>
+
+        <div id="NewsFlashBox" data-ng-init="LoadJsonNewsFlash()" data-ng-show="idCatGlobal==8 && hasNews==true">
+            <ul id="SliderNews" ng-cloak>
+                <li data-ng-repeat="item in NewsFlash.rss.channel.item | limitTo : 30" class="NewsFlas-animation"
+                    data-ng-if="NewscurrentIndex==$index">
+                    <a data-ng-href="NewsCarousel" data-ng-click="SetCurrentNews($index)">
+                        <span class="pubDate">{{::item.pubDate.split(' ')[1]}}
+                        </span>| 
+                        <span class="titleNews">{{::item.title}}
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="MoreNews" ng-cloak>
+            <div class="slider">
+                <ul>
+                    <li data-ng-repeat="item in NewsFlash.rss.channel.item | limitTo : 30 track by $index">
+                        <a data-ng-href="NewsCarousel" data-ng-click="SetCurrentNews($index)">
+                            <p class="pubDate">{{::item.pubDate.split(' ')[1]}}</p>
+                            <p class="titleNews">{{::item.title}}</p>
+                            <p class="ArrowIcon">
+                                <img src="images/Icons_Home/arr_newsflash.png" alt="arr_newsflash" />
+                            </p>
+                        </a>
+                        <!--  <p ng-if="$last" ng-init="Initslider('MoreNews','h')"></p>-->
+                    </li>
+                </ul>
+                <p class="ClearFix SpaceSliderH"></p>
+            </div>
+        </div>
+        <!-- End News Flash -->
+        <!-- Start route Page -->
+        <img src="images/loader1.gif" data-ng-if="Loader_Show" id="Loader" alt="loader" />
+        <div id="smartBannerDiv"
+             ng-class="(idCatGlobal==8)?('smartBannerMain'):((oldCat != true)?'smartBannerIntern':'smartBannerMainOld')">
+        </div>
+        <div data-ng-view class="route-Page"></div>
+        <!-- End route Page -->
+
+        <!-- start Bar Links End Page -->
+        <div id="BarLinksHome" class="BarLinks">
+            <a href="{{offportal}}">
+                <img src="images/Icons_Home/internet.png" alt="לאתר האינטרנט" />&nbsp;לאתר האינטרנט </a>
+            <span class="Breaker">|</span>
+            <a data-ng-click="DownloadApp()">
+                <img src="images/Icons_Home/go-to-app.png" alt="להורדת האפליקציה" />&nbsp;להורדת האפליקציה 
+            </a>
+        </div>
+        <!-- End Bar Links End Page -->
+        <div id="mainTrans"></div>
+        <!-- start GoogleAd Strip Fixed Bottom -->
+        <div id="GoogleAdStripFixedBottomBig">
+            <div id="GoogleAdStripFixedBottomBig_banner"></div>
+        </div>
+        <div id="GoogleAdStripFixedBottom">
+            <div id="GoogleAdStripFixedBottom_banner"></div>
+        </div>
+        <!-- end GoogleAd Strip Fixed Bottom -->
+
+        <!-- Start Popup Big Photo -->
+        <div id="PhotoBox">
+            <a href="#" id="ClosePhotoBox" data-ng-click="HideBigPhoto(); $event.preventDefault();">X</a>
+            <img data-ng-src="{{Big_Photo_Src}}" alt="Big Photo">
+        </div>
+        <!-- End Popup Big Photo -->
+
+        <!-- Start Back Black  -->
+        <div id="BackBlack" data-ng-click="Morepage()"></div>
+        <!-- End Back Black -->
+
+        <!-- Start banners logic-->
+        <div class="BannersUnit" data-ng-if="CheckBannersMivzak('item6')" data-ng-init="AddUnitStrip()"></div>
+        <div class="BannersMivzak" data-ng-if="CheckBannersMivzak('banner_mivzakim')" data-ng-init="AddBannerMivzak()"></div>
+        <!-- End banners logic -->
+
+    </div>
+    <!-- End Body -->
+
+    <!-- Start More Category -->
+    <div id="CatMore" data-ng-init="LoadJsonCat()">
+        <div class="slider">
+            <div class="BoxItem" data-ng-repeat="cat in ListCats.categorys track by $index" ng-cloak>
+                <!-- <p class="TitleCat">{{cat.TitleCat}}</p>-->
+                <ul class="ListCat">
+                    <li class="Item" data-ng-repeat="item in cat.items | filter:yourSearch track by $index">
+                        <a data-ng-href="Category/{{::item.cat_id}}?utm_source=ynet&amp;utm_medium=sidebar&amp;utm_campaign=ynet_inbound"
+                             data-ng-if="item.type=='category'" class="{{::item.icon}}" data-ng-click="Morepage();">
+                            <p class="CatName">{{::item.CatName}}</p>
+                        </a>
+                        <a data-ng-href="{{::item.href}}" data-ng-if="item.type=='link' && item.CatName!='מזג האוויר'"
+                             class="{{::item.icon}}" data-ng-click="Morepage();">
+                            <p class="CatName">{{::item.CatName}}</p>
+                        </a>
+                        <a data-ng-href="{{item.href + CityCode}}" data-ng-if="item.type=='link' && item.CatName=='מזג האוויר'"
+                             class="{{::item.icon}}">
+                            <p class="CatName">{{::item.CatName}}</p>
+                        </a>
+                        <a data-ng-href="{{getNewsAddress()}}" data-ng-if="item.type=='News'" class="{{::item.icon}}"
+                             data-ng-click="Morepage();">
+                            <p class="CatName">{{::item.CatName}}</p>
+                        </a>
+                        <p class="ClearFix"></p>
+                    </li>
+                </ul>
+                <p data-ng-if="$last" data-ng-init="Initslider('CatMore','h')"></p>
+            </div>
+        </div>
+    </div>
+    <!-- End More Category -->
+    <script src="js/App/External/backFromBg.js"></script>
+    <script src="js/App/External/isPC.js"></script>
+    
+    <!-- Outbrain -->
+    <script type="text/javascript" src="http://widgets.outbrain.com/outbrain.js"></script>
+    <!-- Capsool -->
+    <script src="js\Plugins\cappsool-widget-ng.directive.js"></script>
+    <script>
+        //window.onload = function () { adsManager.show(document.getElementById('mainTrans'), '8', '8.Central-1.Home', '0', 'main_trans'); }
+    </script>
+<!--    <script type="text/javascript">
+        (function () {
+            function async_load(script_url) {
+                var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');
+                var s = document.createElement('script');
+                s.src = protocol + script_url;
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
+            bm_website_code = '95D2AE2D55694BF9';
+            jQuery(document).ready(function () { async_load('asset.pagefair.com/measure.min.js') });
+            jQuery(document).ready(function () { async_load('asset.pagefair.net/ads.min.js') });
+        })();
+    </script>-->
+
+</body>
+</html>

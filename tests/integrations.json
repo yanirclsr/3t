@@ -1,0 +1,9 @@
+{
+    "toolsStatus": {
+        "sfdc":false,
+        "adwords":true,
+        "ga":false,
+        "fbAds":true,
+        "twitter": false
+    }
+}
